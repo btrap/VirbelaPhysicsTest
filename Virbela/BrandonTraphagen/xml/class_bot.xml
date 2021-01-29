@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_bot" kind="class" language="C#" prot="public">
+    <compoundname>Bot</compoundname>
+    <basecompoundref refid="class_interactable" prot="public" virt="non-virtual">Interactable</basecompoundref>
+    <briefdescription>
+<para><ref refid="class_interactable" kindref="compound">Interactable</ref> game object for interacting with the player. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Bot</label>
+        <link refid="class_bot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Interactable</label>
+        <link refid="class_interactable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Bot</label>
+        <link refid="class_bot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Interactable</label>
+        <link refid="class_interactable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Bot.cs" line="6" column="7" bodyfile="Assets/Scripts/Bot.cs" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_interactable_1ab5186754b324f72dd903a1701fec1057" prot="public" virt="non-virtual"><scope>Bot</scope><name>BaseMaterial</name></member>
+      <member refid="class_interactable_1af6b678421b26415612f63e4b1778e8a3" prot="public" virt="non-virtual"><scope>Bot</scope><name>HighlightMaterial</name></member>
+      <member refid="class_interactable_1a16d1fd10d1d94f9698717891b473443b" prot="public" virt="virtual"><scope>Bot</scope><name>MoveRandomlyAroundTransform</name></member>
+      <member refid="class_interactable_1a2433269f86fb932a9141a6fc2c68193a" prot="public" virt="virtual"><scope>Bot</scope><name>SetInteracting</name></member>
+      <member refid="class_interactable_1a39557043b34da5cef750930f918c01e1" prot="public" virt="virtual"><scope>Bot</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

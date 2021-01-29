@@ -1,0 +1,103 @@
+Exercise 1
+
+In this exercise you'll configure a Unity scene and write scripts to create an interactive experience. As you progress through the steps, feel free to add comments to the code about why you choose to do things a certain way. Add comments if you felt like there's a better, but more time intensive way to implement specific functionality. It's OK to be more verbose in your comments than typical, to give us a better idea of your thoughts when writing the code.
+What you need
+
+    Unity 2020 (latest, or whatever you have already)
+    IDE of your choice
+    Git
+
+Instructions
+
+This test is broken into multiple phases. You can implement one phase at a time or all phases at once, whatever you find to be best for you.
+Phase 1
+
+Project setup:
+
+    Create a new Unity project inside this directory, put "Virbela" and your name in the project name.
+    Configure the scene:
+        Add a central object named "Player"
+        Add 5 objects named "Item", randomly distributed around the central object
+    Add two C# scripts named "Player" and "Item" to you project
+        Attach the scripts to the objects in the scene according to their name, Item script goes on Item objects, Player script goes on Player object.
+        You may use these scripts or ignore them when pursuing the Functional Goals, the choice is yours. You're free to add any additional scripts you require to meet the functional goals.
+
+Functional Goal 1:
+
+When the game is running, make the Item closest to Player turn red. One and only one Item is red at a time. Ensure that when Player is moved around in the scene manually (by dragging the object in the scene view), the closest Item is always red.
+Phase 2
+
+Project modification:
+
+    Add 5 objects randomly distributed around the central object with the name "Bot"
+    Add a C# script named "Bot" to your project.
+    Attach the "Bot" script to the 5 new objects.
+        Again, you may use this script or ignore it when pursing the Functional Goals.
+
+Functional Goal 2:
+
+When the game is running, make the Bot closest to the Player turn blue. One and only one object (Item or Bot) has its color changed at a time. Ensure that when Player is moved around in the scene manually (by dragging the object in the scene view), the closest Item is red or the closest Bot is blue.
+Phase 3
+
+Functional Goal 3:
+
+Ensure the scripts can handle any number of Items and Bots.
+
+Functional Goal 4:
+
+Allow the designer to choose the base color and highlight color for Items/Bots at edit time.
+Questions
+
+    How can your implementation be optimized?
+	
+	So obviously worst case is testing thousands of objects at run time with multiple physics tests and ray checks.  So I would most likely determine how this data is used in the real world to optimize further.
+	Do the items or bots move very much?  Can I assume we are in a closed space like a building. So I can create my initial test pool to be as small as possible.
+	Possibly a better culling algorithm, maybe even one that sorts the objects by regions or zones like an oct tree.
+	
+    How much time did you spend on your implementation?
+	
+	I spent maybe an hour on the first 3 goals.  I knew I wanted to create a generic interactable item that shot rays back and forth with the player.
+	I always thought creating a sphere in 3D space would be the best way to reduce testing, that took another 30 minutes or so to add in.  
+	My current assumtions are that the scene has no extra game objects with colliders that could block my rays.
+	If that was the case I might need to turn them off for testing or use different Layers to prevent physics checks on them.
+	I wasn't sure if any work was needed to be done for Goal 4 since I used custom Materials which can have colors set at edit time.  
+	I could add color properties to the items/bots scripts but that would either change all of them or allow for making material copies.  
+	But I would rather look into shaders to change the color if we wanted that.
+	I did a bunch of the optional as I went along.  I didn't get the read/write done because I used Monobehaviours which can't be seriealized and I don't think PlayerPrefs is the best solution for storing state.
+	If I were to spend a little more time I would look into using scriptableobjects since they are serializable and would be able to keep the scene data and saved data in sync.
+	Overall I might have spent 3-4 hours doing all of the work and optional work and another hour of so just tweaking things and adding ui and a quick player controller setup.
+	
+    What was most challenging for you?
+	
+	Remembering the physics calls took me the most time, as well as reading the rules to make sure I didn't miss any detail.  Once I used Unity's docs on Physics I was able to track down the ray tests and the circle test.
+	I always struggle with design in these small projects, but I could talk possible code reuse and better abstractions anytime.  I also found the data storage and unit tests tough in the optional.
+	I added in testing that I would normally do but I don't have a full sweet of Nunit tests running.  I also could have tried to shove my data into player prefs or created a large serializable class to store the data,
+	but I was concerned it would look bolted on after the fact.  I have the beginnings of it in Level.cs
+	
+    What else would you add to this exercise?
+	
+	I would love to add more logic and ai to it.  The name item kind of implies static and bot implies ai or movement.  Maybe add some sort of challenge for the optional as well.
+	Like add a wall into the scene and find the closest object accounting for testing around the wall.
+	
+	EXTRA NOTES
+	I didn't do namespacing because it was a small codebase, but normally at work I find where the feature would live and place it in that namespace.
+	Items and Bots can be added with 1 and 2 respectivly, and WASD and the mouse can be used to move the player in game.
+
+Optional
+
+    Add Unit Tests
+    Add XML docs
+    Optimize finding nearest
+    Add new Items/Bots automatically on key press
+    Read/write Item/Bot/Player state to a file and restore on launch
+
+Next Steps
+
+    Confirm you've addressed the functional goals
+    Answer the questions above by adding them to this file
+    Commit and push the entire repository, with your completed project, back into a repository host of your choice (bitbucket, github, gitlab, etc.)
+    Share your project URL with your Virbela contact (Recruiter or Hiring Manager)
+
+If you have questions
+
+    Reach out to your Virbela contact (Recruiter or Hiring Manager)

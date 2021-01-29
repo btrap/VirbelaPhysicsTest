@@ -1,0 +1,163 @@
+\hypertarget{class_level}{}\doxysection{Level Class Reference}
+\label{class_level}\index{Level@{Level}}
+
+
+The level manages a \mbox{\hyperlink{class_player}{Player}} and multiple \mbox{\hyperlink{class_interactable}{Interactable}} game objects.  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_level_a2cf8a47263f4c94c401f053dca0e4334}{Randomly\+Move\+Interactables\+In\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Moves all \mbox{\hyperlink{class_interactable}{Interactable}} objects in the scene randomly. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_a7484b47a21957f59d977ec7fe37205c5}{Test\+If\+Shortest\+Distance}} (Transform interactable\+Transform, Transform player\+Transform)
+\begin{DoxyCompactList}\small\item\em Tests if the distance between an \mbox{\hyperlink{class_interactable}{Interactable}} Transform and a \mbox{\hyperlink{class_player}{Player}} Transform is the shortest. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a4c1e29ea7a865a2feca45b4fe23f25b3}{Test\+With\+Shere}} ()
+\begin{DoxyCompactList}\small\item\em Test for closest interactable inside of a culling sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a085c89c9ddf6da7d65d0f6feec2d4f36}{Test\+All\+Interactables}} ()
+\begin{DoxyCompactList}\small\item\em Test for the closest interactable in the scene. First solution / replaced with Test\+With\+Shere \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_level_a0625f1641b5d389f68cc80430663d5d4}{Player}} = null
+\item 
+Game\+Object \mbox{\hyperlink{class_level_a3540bf7f3a1720bbd0af0d4eba7344d4}{Interactable\+Parent}} = null
+\item 
+List$<$ \mbox{\hyperlink{class_interactable}{Interactable}} $>$ \mbox{\hyperlink{class_level_ac8fd2fbcf174e4be59a06f6f28dbac5d}{Interactables}} = new List$<$\mbox{\hyperlink{class_interactable}{Interactable}}$>$()
+\item 
+\mbox{\hyperlink{class_interactable}{Interactable}} \mbox{\hyperlink{class_level_ac27f4d4ac9dab59df5ba3011aa4a049e}{Current\+Closest}} = null
+\item 
+int \mbox{\hyperlink{class_level_aff97e2a3a71824b4023c3460a590aa1b}{Tested\+Count}} = 0
+\item 
+float \mbox{\hyperlink{class_level_a02c300703d28b5074f80ff9c74d9e3e7}{Interactables\+Min}} = -\/100.\+0f
+\item 
+float \mbox{\hyperlink{class_level_af618afa239a5cb72485db1c847ae26df}{Interactables\+Max}} = 100.\+0f
+\item 
+Game\+Object \mbox{\hyperlink{class_level_abd1ff6e4ce4cdbd44cf754fdcaf968dd}{Cull\+Sphere}} = null
+\item 
+bool \mbox{\hyperlink{class_level_a38d86b5cd0bfa79e421e7bd014f91be3}{View\+Rays}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The level manages a \mbox{\hyperlink{class_player}{Player}} and multiple \mbox{\hyperlink{class_interactable}{Interactable}} game objects. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_a2cf8a47263f4c94c401f053dca0e4334}\label{class_level_a2cf8a47263f4c94c401f053dca0e4334}} 
+\index{Level@{Level}!RandomlyMoveInteractablesInScene@{RandomlyMoveInteractablesInScene}}
+\index{RandomlyMoveInteractablesInScene@{RandomlyMoveInteractablesInScene}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{RandomlyMoveInteractablesInScene()}{RandomlyMoveInteractablesInScene()}}
+{\footnotesize\ttfamily void Level.\+Randomly\+Move\+Interactables\+In\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves all \mbox{\hyperlink{class_interactable}{Interactable}} objects in the scene randomly. 
+
+\mbox{\Hypertarget{class_level_a085c89c9ddf6da7d65d0f6feec2d4f36}\label{class_level_a085c89c9ddf6da7d65d0f6feec2d4f36}} 
+\index{Level@{Level}!TestAllInteractables@{TestAllInteractables}}
+\index{TestAllInteractables@{TestAllInteractables}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{TestAllInteractables()}{TestAllInteractables()}}
+{\footnotesize\ttfamily void Level.\+Test\+All\+Interactables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test for the closest interactable in the scene. First solution / replaced with Test\+With\+Shere 
+
+\mbox{\Hypertarget{class_level_a7484b47a21957f59d977ec7fe37205c5}\label{class_level_a7484b47a21957f59d977ec7fe37205c5}} 
+\index{Level@{Level}!TestIfShortestDistance@{TestIfShortestDistance}}
+\index{TestIfShortestDistance@{TestIfShortestDistance}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{TestIfShortestDistance()}{TestIfShortestDistance()}}
+{\footnotesize\ttfamily bool Level.\+Test\+If\+Shortest\+Distance (\begin{DoxyParamCaption}\item[{Transform}]{interactable\+Transform,  }\item[{Transform}]{player\+Transform }\end{DoxyParamCaption})}
+
+
+
+Tests if the distance between an \mbox{\hyperlink{class_interactable}{Interactable}} Transform and a \mbox{\hyperlink{class_player}{Player}} Transform is the shortest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interactable\+Transform} & The \mbox{\hyperlink{class_interactable}{Interactable}} Transform \\
+\hline
+{\em player\+Transform} & The \mbox{\hyperlink{class_player}{Player}} Transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is this shorter than the previous shortest. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a4c1e29ea7a865a2feca45b4fe23f25b3}\label{class_level_a4c1e29ea7a865a2feca45b4fe23f25b3}} 
+\index{Level@{Level}!TestWithShere@{TestWithShere}}
+\index{TestWithShere@{TestWithShere}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{TestWithShere()}{TestWithShere()}}
+{\footnotesize\ttfamily void Level.\+Test\+With\+Shere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test for closest interactable inside of a culling sphere. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_level_abd1ff6e4ce4cdbd44cf754fdcaf968dd}\label{class_level_abd1ff6e4ce4cdbd44cf754fdcaf968dd}} 
+\index{Level@{Level}!CullSphere@{CullSphere}}
+\index{CullSphere@{CullSphere}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{CullSphere}{CullSphere}}
+{\footnotesize\ttfamily Game\+Object Level.\+Cull\+Sphere = null}
+
+\mbox{\Hypertarget{class_level_ac27f4d4ac9dab59df5ba3011aa4a049e}\label{class_level_ac27f4d4ac9dab59df5ba3011aa4a049e}} 
+\index{Level@{Level}!CurrentClosest@{CurrentClosest}}
+\index{CurrentClosest@{CurrentClosest}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{CurrentClosest}{CurrentClosest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_interactable}{Interactable}} Level.\+Current\+Closest = null}
+
+\mbox{\Hypertarget{class_level_a3540bf7f3a1720bbd0af0d4eba7344d4}\label{class_level_a3540bf7f3a1720bbd0af0d4eba7344d4}} 
+\index{Level@{Level}!InteractableParent@{InteractableParent}}
+\index{InteractableParent@{InteractableParent}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{InteractableParent}{InteractableParent}}
+{\footnotesize\ttfamily Game\+Object Level.\+Interactable\+Parent = null}
+
+\mbox{\Hypertarget{class_level_ac8fd2fbcf174e4be59a06f6f28dbac5d}\label{class_level_ac8fd2fbcf174e4be59a06f6f28dbac5d}} 
+\index{Level@{Level}!Interactables@{Interactables}}
+\index{Interactables@{Interactables}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Interactables}{Interactables}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_interactable}{Interactable}}$>$ Level.\+Interactables = new List$<$\mbox{\hyperlink{class_interactable}{Interactable}}$>$()}
+
+\mbox{\Hypertarget{class_level_af618afa239a5cb72485db1c847ae26df}\label{class_level_af618afa239a5cb72485db1c847ae26df}} 
+\index{Level@{Level}!InteractablesMax@{InteractablesMax}}
+\index{InteractablesMax@{InteractablesMax}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{InteractablesMax}{InteractablesMax}}
+{\footnotesize\ttfamily float Level.\+Interactables\+Max = 100.\+0f}
+
+\mbox{\Hypertarget{class_level_a02c300703d28b5074f80ff9c74d9e3e7}\label{class_level_a02c300703d28b5074f80ff9c74d9e3e7}} 
+\index{Level@{Level}!InteractablesMin@{InteractablesMin}}
+\index{InteractablesMin@{InteractablesMin}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{InteractablesMin}{InteractablesMin}}
+{\footnotesize\ttfamily float Level.\+Interactables\+Min = -\/100.\+0f}
+
+\mbox{\Hypertarget{class_level_a0625f1641b5d389f68cc80430663d5d4}\label{class_level_a0625f1641b5d389f68cc80430663d5d4}} 
+\index{Level@{Level}!Player@{Player}}
+\index{Player@{Player}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Level.\+Player = null}
+
+\mbox{\Hypertarget{class_level_aff97e2a3a71824b4023c3460a590aa1b}\label{class_level_aff97e2a3a71824b4023c3460a590aa1b}} 
+\index{Level@{Level}!TestedCount@{TestedCount}}
+\index{TestedCount@{TestedCount}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{TestedCount}{TestedCount}}
+{\footnotesize\ttfamily int Level.\+Tested\+Count = 0}
+
+\mbox{\Hypertarget{class_level_a38d86b5cd0bfa79e421e7bd014f91be3}\label{class_level_a38d86b5cd0bfa79e421e7bd014f91be3}} 
+\index{Level@{Level}!ViewRays@{ViewRays}}
+\index{ViewRays@{ViewRays}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{ViewRays}{ViewRays}}
+{\footnotesize\ttfamily bool Level.\+View\+Rays = true}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_level_8cs}{Level.\+cs}}\end{DoxyCompactItemize}

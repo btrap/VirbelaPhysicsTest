@@ -1,0 +1,9 @@
+
+*.apk
+*.zip
+*HtmlBuild/
+*Library/
+*Logs/
+*obj/
+*Packages/
+*Temp/

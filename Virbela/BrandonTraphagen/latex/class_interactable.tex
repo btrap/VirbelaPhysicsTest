@@ -1,0 +1,103 @@
+\hypertarget{class_interactable}{}\doxysection{Interactable Class Reference}
+\label{class_interactable}\index{Interactable@{Interactable}}
+
+
+A base gameobjects the player can interacte with.  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+
+
+Inherited by \mbox{\hyperlink{class_bot}{Bot}}, and \mbox{\hyperlink{class_item}{Item}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_interactable_a16d1fd10d1d94f9698717891b473443b}{Move\+Randomly\+Around\+Transform}} (Transform origin\+Transform, float min\+Position, float max\+Position)
+\begin{DoxyCompactList}\small\item\em This function randomly places this \mbox{\hyperlink{class_interactable}{Interactable}} around a transform. Only as far or as close as the min and max. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_interactable_a39557043b34da5cef750930f918c01e1}{Start}} ()
+\begin{DoxyCompactList}\small\item\em This is called when Unity firsts creates the Interacable and it sets the Material to Base. Materials must be attached before this call. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_interactable_a2433269f86fb932a9141a6fc2c68193a}{Set\+Interacting}} (bool interacting)
+\begin{DoxyCompactList}\small\item\em Sets the Material of the \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Material \mbox{\hyperlink{class_interactable_ab5186754b324f72dd903a1701fec1057}{Base\+Material}}
+\item 
+Material \mbox{\hyperlink{class_interactable_af6b678421b26415612f63e4b1778e8a3}{Highlight\+Material}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base gameobjects the player can interacte with. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interactable_a16d1fd10d1d94f9698717891b473443b}\label{class_interactable_a16d1fd10d1d94f9698717891b473443b}} 
+\index{Interactable@{Interactable}!MoveRandomlyAroundTransform@{MoveRandomlyAroundTransform}}
+\index{MoveRandomlyAroundTransform@{MoveRandomlyAroundTransform}!Interactable@{Interactable}}
+\doxysubsubsection{\texorpdfstring{MoveRandomlyAroundTransform()}{MoveRandomlyAroundTransform()}}
+{\footnotesize\ttfamily virtual void Interactable.\+Move\+Randomly\+Around\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{origin\+Transform,  }\item[{float}]{min\+Position,  }\item[{float}]{max\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function randomly places this \mbox{\hyperlink{class_interactable}{Interactable}} around a transform. Only as far or as close as the min and max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin\+Transform} & A valid transform to be generated around.\\
+\hline
+{\em min\+Position} & The minimum position away.\\
+\hline
+{\em max\+Position} & The maximum position away.\\
+\hline
+\end{DoxyParams}
+$<$exception cref=\char`\"{}\+System\+Assert.\+Assert\char`\"{} Assert min\+Position is less than max\+Position. $<$exception cref=\char`\"{}\+System\+Assert.\+Assert\char`\"{} Assert transform.\+transform is valid. \mbox{\Hypertarget{class_interactable_a2433269f86fb932a9141a6fc2c68193a}\label{class_interactable_a2433269f86fb932a9141a6fc2c68193a}} 
+\index{Interactable@{Interactable}!SetInteracting@{SetInteracting}}
+\index{SetInteracting@{SetInteracting}!Interactable@{Interactable}}
+\doxysubsubsection{\texorpdfstring{SetInteracting()}{SetInteracting()}}
+{\footnotesize\ttfamily virtual void Interactable.\+Set\+Interacting (\begin{DoxyParamCaption}\item[{bool}]{interacting }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the Material of the 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interacting} & If the object is being interacted with set the Material to Highlight\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interactable_a39557043b34da5cef750930f918c01e1}\label{class_interactable_a39557043b34da5cef750930f918c01e1}} 
+\index{Interactable@{Interactable}!Start@{Start}}
+\index{Start@{Start}!Interactable@{Interactable}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void Interactable.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called when Unity firsts creates the Interacable and it sets the Material to Base. Materials must be attached before this call. 
+
+$<$exception cref=\char`\"{}\+System\+Assert.\+Assert\char`\"{} Assert Base\+Material is valid. $<$exception cref=\char`\"{}\+System\+Assert.\+Assert\char`\"{} Assert Highlight\+Material is valid. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_interactable_ab5186754b324f72dd903a1701fec1057}\label{class_interactable_ab5186754b324f72dd903a1701fec1057}} 
+\index{Interactable@{Interactable}!BaseMaterial@{BaseMaterial}}
+\index{BaseMaterial@{BaseMaterial}!Interactable@{Interactable}}
+\doxysubsubsection{\texorpdfstring{BaseMaterial}{BaseMaterial}}
+{\footnotesize\ttfamily Material Interactable.\+Base\+Material}
+
+\mbox{\Hypertarget{class_interactable_af6b678421b26415612f63e4b1778e8a3}\label{class_interactable_af6b678421b26415612f63e4b1778e8a3}} 
+\index{Interactable@{Interactable}!HighlightMaterial@{HighlightMaterial}}
+\index{HighlightMaterial@{HighlightMaterial}!Interactable@{Interactable}}
+\doxysubsubsection{\texorpdfstring{HighlightMaterial}{HighlightMaterial}}
+{\footnotesize\ttfamily Material Interactable.\+Highlight\+Material}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_interactable_8cs}{Interactable.\+cs}}\end{DoxyCompactItemize}

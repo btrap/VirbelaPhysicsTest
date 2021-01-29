@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_level" kind="class" language="C#" prot="public">
+    <compoundname>Level</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_level_1a0625f1641b5d389f68cc80430663d5d4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref></type>
+        <definition>Player Level.Player</definition>
+        <argsstring></argsstring>
+        <name>Player</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="13" column="19" bodyfile="Assets/Scripts/Level.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a3540bf7f3a1720bbd0af0d4eba7344d4" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Level.InteractableParent</definition>
+        <argsstring></argsstring>
+        <name>InteractableParent</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="15" column="23" bodyfile="Assets/Scripts/Level.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1ac8fd2fbcf174e4be59a06f6f28dbac5d" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_interactable" kindref="compound">Interactable</ref> &gt;</type>
+        <definition>List&lt;Interactable&gt; Level.Interactables</definition>
+        <argsstring></argsstring>
+        <name>Interactables</name>
+        <initializer>= new List&lt;<ref refid="class_interactable" kindref="compound">Interactable</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="16" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1ac27f4d4ac9dab59df5ba3011aa4a049e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_interactable" kindref="compound">Interactable</ref></type>
+        <definition>Interactable Level.CurrentClosest</definition>
+        <argsstring></argsstring>
+        <name>CurrentClosest</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="19" column="25" bodyfile="Assets/Scripts/Level.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1aff97e2a3a71824b4023c3460a590aa1b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Level.TestedCount</definition>
+        <argsstring></argsstring>
+        <name>TestedCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="20" column="16" bodyfile="Assets/Scripts/Level.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a02c300703d28b5074f80ff9c74d9e3e7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Level.InteractablesMin</definition>
+        <argsstring></argsstring>
+        <name>InteractablesMin</name>
+        <initializer>= -100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="22" column="18" bodyfile="Assets/Scripts/Level.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1af618afa239a5cb72485db1c847ae26df" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Level.InteractablesMax</definition>
+        <argsstring></argsstring>
+        <name>InteractablesMax</name>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="23" column="18" bodyfile="Assets/Scripts/Level.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1abd1ff6e4ce4cdbd44cf754fdcaf968dd" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Level.CullSphere</definition>
+        <argsstring></argsstring>
+        <name>CullSphere</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="25" column="23" bodyfile="Assets/Scripts/Level.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a38d86b5cd0bfa79e421e7bd014f91be3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Level.ViewRays</definition>
+        <argsstring></argsstring>
+        <name>ViewRays</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="26" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_level_1afe8615f24a70845aecd74bcb5c0af858" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Level.currentShortestDist</definition>
+        <argsstring></argsstring>
+        <name>currentShortestDist</name>
+        <initializer>= Mathf.Infinity</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="18" column="19" bodyfile="Assets/Scripts/Level.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a64eff685b8ba8a04e85f9a339c972002" prot="private" static="no" mutable="no">
+        <type>Ray</type>
+        <definition>Ray Level.testRay</definition>
+        <argsstring></argsstring>
+        <name>testRay</name>
+        <initializer>= new Ray()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="27" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_level_1a854c3e082e8f26c6957caa9518fefb43" prot="private" static="no" mutable="no">
+        <type>RaycastHit</type>
+        <definition>RaycastHit Level.rayHit</definition>
+        <argsstring></argsstring>
+        <name>rayHit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="28" column="24" bodyfile="Assets/Scripts/Level.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_level_1a0bce8fcff15f52049fd2b58d124e59fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start the level by randomly moving <ref refid="class_interactable" kindref="compound">Interactable</ref> objects around and setting the first <ref refid="class_interactable" kindref="compound">Interactable</ref> to test for closest. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="33" column="10" bodyfile="Assets/Scripts/Level.cs" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a91badd979da1c525fd257e5a5ce15831" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Test for the closest <ref refid="class_interactable" kindref="compound">Interactable</ref> to the <ref refid="class_player" kindref="compound">Player</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="60" column="10" bodyfile="Assets/Scripts/Level.cs" bodystart="60" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_level_1a2cf8a47263f4c94c401f053dca0e4334" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level.RandomlyMoveInteractablesInScene</definition>
+        <argsstring>()</argsstring>
+        <name>RandomlyMoveInteractablesInScene</name>
+        <briefdescription>
+<para>Moves all <ref refid="class_interactable" kindref="compound">Interactable</ref> objects in the scene randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="49" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a7484b47a21957f59d977ec7fe37205c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Level.TestIfShortestDistance</definition>
+        <argsstring>(Transform interactableTransform, Transform playerTransform)</argsstring>
+        <name>TestIfShortestDistance</name>
+        <param>
+          <type>Transform</type>
+          <declname>interactableTransform</declname>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>playerTransform</declname>
+        </param>
+        <briefdescription>
+<para>Tests if the distance between an <ref refid="class_interactable" kindref="compound">Interactable</ref> Transform and a <ref refid="class_player" kindref="compound">Player</ref> Transform is the shortest. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interactableTransform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_interactable" kindref="compound">Interactable</ref> Transform </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>playerTransform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_player" kindref="compound">Player</ref> Transform </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Is this shorter than the previous shortest. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="72" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="72" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a4c1e29ea7a865a2feca45b4fe23f25b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level.TestWithShere</definition>
+        <argsstring>()</argsstring>
+        <name>TestWithShere</name>
+        <briefdescription>
+<para>Test for closest interactable inside of a culling sphere. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="111" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="111" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_level_1a085c89c9ddf6da7d65d0f6feec2d4f36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Level.TestAllInteractables</definition>
+        <argsstring>()</argsstring>
+        <name>TestAllInteractables</name>
+        <briefdescription>
+<para>Test for the closest interactable in the scene. First solution / replaced with TestWithShere </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Level.cs" line="155" column="17" bodyfile="Assets/Scripts/Level.cs" bodystart="155" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The level manages a <ref refid="class_player" kindref="compound">Player</ref> and multiple <ref refid="class_interactable" kindref="compound">Interactable</ref> game objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Level</label>
+        <link refid="class_level"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="4">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interactable</label>
+        <link refid="class_interactable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Level</label>
+        <link refid="class_level"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CurrentClosest</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Level.cs" line="11" column="7" bodyfile="Assets/Scripts/Level.cs" bodystart="12" bodyend="230"/>
+    <listofallmembers>
+      <member refid="class_level_1abd1ff6e4ce4cdbd44cf754fdcaf968dd" prot="public" virt="non-virtual"><scope>Level</scope><name>CullSphere</name></member>
+      <member refid="class_level_1ac27f4d4ac9dab59df5ba3011aa4a049e" prot="public" virt="non-virtual"><scope>Level</scope><name>CurrentClosest</name></member>
+      <member refid="class_level_1afe8615f24a70845aecd74bcb5c0af858" prot="private" virt="non-virtual"><scope>Level</scope><name>currentShortestDist</name></member>
+      <member refid="class_level_1a3540bf7f3a1720bbd0af0d4eba7344d4" prot="public" virt="non-virtual"><scope>Level</scope><name>InteractableParent</name></member>
+      <member refid="class_level_1ac8fd2fbcf174e4be59a06f6f28dbac5d" prot="public" virt="non-virtual"><scope>Level</scope><name>Interactables</name></member>
+      <member refid="class_level_1af618afa239a5cb72485db1c847ae26df" prot="public" virt="non-virtual"><scope>Level</scope><name>InteractablesMax</name></member>
+      <member refid="class_level_1a02c300703d28b5074f80ff9c74d9e3e7" prot="public" virt="non-virtual"><scope>Level</scope><name>InteractablesMin</name></member>
+      <member refid="class_level_1a0625f1641b5d389f68cc80430663d5d4" prot="public" virt="non-virtual"><scope>Level</scope><name>Player</name></member>
+      <member refid="class_level_1a2cf8a47263f4c94c401f053dca0e4334" prot="public" virt="non-virtual"><scope>Level</scope><name>RandomlyMoveInteractablesInScene</name></member>
+      <member refid="class_level_1a854c3e082e8f26c6957caa9518fefb43" prot="private" virt="non-virtual"><scope>Level</scope><name>rayHit</name></member>
+      <member refid="class_level_1a0bce8fcff15f52049fd2b58d124e59fb" prot="private" virt="non-virtual"><scope>Level</scope><name>Start</name></member>
+      <member refid="class_level_1a085c89c9ddf6da7d65d0f6feec2d4f36" prot="public" virt="non-virtual"><scope>Level</scope><name>TestAllInteractables</name></member>
+      <member refid="class_level_1aff97e2a3a71824b4023c3460a590aa1b" prot="public" virt="non-virtual"><scope>Level</scope><name>TestedCount</name></member>
+      <member refid="class_level_1a7484b47a21957f59d977ec7fe37205c5" prot="public" virt="non-virtual"><scope>Level</scope><name>TestIfShortestDistance</name></member>
+      <member refid="class_level_1a64eff685b8ba8a04e85f9a339c972002" prot="private" virt="non-virtual"><scope>Level</scope><name>testRay</name></member>
+      <member refid="class_level_1a4c1e29ea7a865a2feca45b4fe23f25b3" prot="public" virt="non-virtual"><scope>Level</scope><name>TestWithShere</name></member>
+      <member refid="class_level_1a91badd979da1c525fd257e5a5ce15831" prot="private" virt="non-virtual"><scope>Level</scope><name>Update</name></member>
+      <member refid="class_level_1a38d86b5cd0bfa79e421e7bd014f91be3" prot="public" virt="non-virtual"><scope>Level</scope><name>ViewRays</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

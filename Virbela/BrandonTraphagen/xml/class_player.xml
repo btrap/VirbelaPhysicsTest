@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_player" kind="class" language="C#" prot="public">
+    <compoundname>Player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_1a13fb1737368f462666e1790104da6cd0" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Player.CameraObject</definition>
+        <argsstring></argsstring>
+        <name>CameraObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="9" column="23" bodyfile="Assets/Scripts/Player.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a8a0c94aaae0aebda016dc42fa16846a9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Player.PlayerSpeed</definition>
+        <argsstring></argsstring>
+        <name>PlayerSpeed</name>
+        <initializer>= 20.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="12" column="18" bodyfile="Assets/Scripts/Player.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1acbe362b2e77df95e8459506e83b291dc" prot="private" static="no" mutable="no">
+        <type>CharacterController</type>
+        <definition>CharacterController Player.controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="10" column="33" bodyfile="Assets/Scripts/Player.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a99784200738cabd6d6cafb2ef3f5ff6e" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Player.playerMoveDirection</definition>
+        <argsstring></argsstring>
+        <name>playerMoveDirection</name>
+        <initializer>= Vector3.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="14" column="21" bodyfile="Assets/Scripts/Player.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1ad25b55a9a6b8cc727c9eb37ed3c0aa36" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Player.cameraRotation</definition>
+        <argsstring></argsstring>
+        <name>cameraRotation</name>
+        <initializer>= Vector2.zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="15" column="21" bodyfile="Assets/Scripts/Player.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a10b74268dd67cdf385e8dac9115a8595" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Player.cameraLookSpeed</definition>
+        <argsstring></argsstring>
+        <name>cameraLookSpeed</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="16" column="19" bodyfile="Assets/Scripts/Player.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_1a1a09a3ded16ac1646f6bdd4f25fe0ddd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="18" column="18" bodyfile="Assets/Scripts/Player.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1aa3eaaf11e3213cdd60ac342a94b1de83" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.UpdateCameraObject</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCameraObject</name>
+        <briefdescription>
+<para>Update the cameraObject rotation and view around the <ref refid="class_player" kindref="compound">Player</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="28" column="18" bodyfile="Assets/Scripts/Player.cs" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a822ce3ce9851bfff015f99ec09a5c16d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.UpdatePlayer</definition>
+        <argsstring>()</argsstring>
+        <name>UpdatePlayer</name>
+        <briefdescription>
+<para>Update the <ref refid="class_player" kindref="compound">Player</ref> by speed and input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="39" column="18" bodyfile="Assets/Scripts/Player.cs" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1aace80372e18e32fe177e295fe5d93ba8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Used to update the Players position and the cameraObject position around the <ref refid="class_player" kindref="compound">Player</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/Player.cs" line="52" column="18" bodyfile="Assets/Scripts/Player.cs" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main player game object will be looking to interact with other objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/Player.cs" line="7" column="7" bodyfile="Assets/Scripts/Player.cs" bodystart="8" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_player_1a10b74268dd67cdf385e8dac9115a8595" prot="private" virt="non-virtual"><scope>Player</scope><name>cameraLookSpeed</name></member>
+      <member refid="class_player_1a13fb1737368f462666e1790104da6cd0" prot="public" virt="non-virtual"><scope>Player</scope><name>CameraObject</name></member>
+      <member refid="class_player_1ad25b55a9a6b8cc727c9eb37ed3c0aa36" prot="private" virt="non-virtual"><scope>Player</scope><name>cameraRotation</name></member>
+      <member refid="class_player_1acbe362b2e77df95e8459506e83b291dc" prot="private" virt="non-virtual"><scope>Player</scope><name>controller</name></member>
+      <member refid="class_player_1a99784200738cabd6d6cafb2ef3f5ff6e" prot="private" virt="non-virtual"><scope>Player</scope><name>playerMoveDirection</name></member>
+      <member refid="class_player_1a8a0c94aaae0aebda016dc42fa16846a9" prot="public" virt="non-virtual"><scope>Player</scope><name>PlayerSpeed</name></member>
+      <member refid="class_player_1a1a09a3ded16ac1646f6bdd4f25fe0ddd" prot="private" virt="non-virtual"><scope>Player</scope><name>Start</name></member>
+      <member refid="class_player_1aace80372e18e32fe177e295fe5d93ba8" prot="private" virt="non-virtual"><scope>Player</scope><name>Update</name></member>
+      <member refid="class_player_1aa3eaaf11e3213cdd60ac342a94b1de83" prot="private" virt="non-virtual"><scope>Player</scope><name>UpdateCameraObject</name></member>
+      <member refid="class_player_1a822ce3ce9851bfff015f99ec09a5c16d" prot="private" virt="non-virtual"><scope>Player</scope><name>UpdatePlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

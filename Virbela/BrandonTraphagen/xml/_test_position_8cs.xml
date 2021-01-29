@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_test_position_8cs" kind="file" language="C#">
+    <compoundname>TestPosition.cs</compoundname>
+    <innerclass refid="class_test_position" prot="public">TestPosition</innerclass>
+    <innernamespace refid="namespace_unity_engine_1_1_u_i">UnityEngine::UI</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_test_position_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" prot="public" static="no">
+        <type>System.Diagnostics.Debug</type>
+        <definition>using SystemAssert =  System.Diagnostics.Debug</definition>
+        <argsstring></argsstring>
+        <name>SystemAssert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="3" column="1" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="_interactable_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" kindref="member">SystemAssert</ref><sp/>=<sp/>System.Diagnostics.Debug;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_test_position" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_test_position" kindref="compound">TestPosition</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_level" kindref="compound">Level</ref><sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref><sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_interactable" kindref="compound">Interactable</ref><sp/><ref refid="class_test_position_1a9401fd51c80efdb7e4338231281abdec" kindref="member">ItemPrefab</ref><sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_interactable" kindref="compound">Interactable</ref><sp/><ref refid="class_test_position_1a71c27deeb7623e7c1f0d42f50bb0cc72" kindref="member">BotPrefab</ref><sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Text<sp/><ref refid="class_test_position_1ac68997064703eb770f5b88558405e742" kindref="member">TestedCount</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interactable_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" kindref="member">SystemAssert</ref>.Assert(<ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref><sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interactable_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" kindref="member">SystemAssert</ref>.Assert(<ref refid="class_test_position_1a9401fd51c80efdb7e4338231281abdec" kindref="member">ItemPrefab</ref><sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interactable_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" kindref="member">SystemAssert</ref>.Assert(<ref refid="class_test_position_1a71c27deeb7623e7c1f0d42f50bb0cc72" kindref="member">BotPrefab</ref><sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_interactable_8cs_1a198de5a0c4b6a2e50eeabfddceefeb8a" kindref="member">SystemAssert</ref>.Assert(<ref refid="class_test_position_1ac68997064703eb770f5b88558405e742" kindref="member">TestedCount</ref><sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Update()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1ac68997064703eb770f5b88558405e742" kindref="member">TestedCount</ref>.text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Tested<sp/>-<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1aff97e2a3a71824b4023c3460a590aa1b" kindref="member">TestedCount</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Input.GetKey(KeyCode.Alpha1))</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1ac435b3cb7334b13ff5b7738091e87d03" kindref="member">RandomlyAddItem</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Input.GetKey(KeyCode.Alpha2))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a4290bf4c39f0c89b8ff9bf3dd410c245" kindref="member">RandomlyAddBot</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_position_1ade448a929d5be72b9744b36b4694960a" kindref="member">ToggleRays</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a38d86b5cd0bfa79e421e7bd014f91be3" kindref="member">ViewRays</ref><sp/>=<sp/>!<ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a38d86b5cd0bfa79e421e7bd014f91be3" kindref="member">ViewRays</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_position_1a26c18b89555ca4da0b9fff4b4722c72b" kindref="member">RandomlyMoveInteractablesInScene</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a2cf8a47263f4c94c401f053dca0e4334" kindref="member">RandomlyMoveInteractablesInScene</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_position_1a8914548d6d04f91e58b27c924e4a3acf" kindref="member">RandomlyAddInteractable</ref>(<ref refid="class_interactable" kindref="compound">Interactable</ref><sp/>newInteractable)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newInteractable.<ref refid="class_interactable_1a16d1fd10d1d94f9698717891b473443b" kindref="member">MoveRandomlyAroundTransform</ref>(<ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a0625f1641b5d389f68cc80430663d5d4" kindref="member">Player</ref>.transform,<sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a02c300703d28b5074f80ff9c74d9e3e7" kindref="member">InteractablesMin</ref>,<sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1af618afa239a5cb72485db1c847ae26df" kindref="member">InteractablesMax</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1ac8fd2fbcf174e4be59a06f6f28dbac5d" kindref="member">Interactables</ref>.Add(newInteractable);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_position_1a4290bf4c39f0c89b8ff9bf3dd410c245" kindref="member">RandomlyAddBot</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a8914548d6d04f91e58b27c924e4a3acf" kindref="member">RandomlyAddInteractable</ref>(Instantiate(<ref refid="class_test_position_1a71c27deeb7623e7c1f0d42f50bb0cc72" kindref="member">BotPrefab</ref>,<sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a3540bf7f3a1720bbd0af0d4eba7344d4" kindref="member">InteractableParent</ref>.transform));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_test_position_1ac435b3cb7334b13ff5b7738091e87d03" kindref="member">RandomlyAddItem</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_test_position_1a8914548d6d04f91e58b27c924e4a3acf" kindref="member">RandomlyAddInteractable</ref>(Instantiate(<ref refid="class_test_position_1a9401fd51c80efdb7e4338231281abdec" kindref="member">ItemPrefab</ref>,<sp/><ref refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" kindref="member">LevelToTest</ref>.<ref refid="class_level_1a3540bf7f3a1720bbd0af0d4eba7344d4" kindref="member">InteractableParent</ref>.transform));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Assets/Scripts/TestPosition.cs"/>
+  </compounddef>
+</doxygen>

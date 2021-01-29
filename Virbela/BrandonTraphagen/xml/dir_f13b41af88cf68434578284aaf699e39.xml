@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_f13b41af88cf68434578284aaf699e39" kind="dir">
+    <compoundname>Assets/Scripts</compoundname>
+    <innerfile refid="_bot_8cs">Bot.cs</innerfile>
+    <innerfile refid="_interactable_8cs">Interactable.cs</innerfile>
+    <innerfile refid="_item_8cs">Item.cs</innerfile>
+    <innerfile refid="_level_8cs">Level.cs</innerfile>
+    <innerfile refid="_player_8cs">Player.cs</innerfile>
+    <innerfile refid="_test_position_8cs">TestPosition.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

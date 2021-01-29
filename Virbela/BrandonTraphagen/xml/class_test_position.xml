@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_test_position" kind="class" language="C#" prot="public">
+    <compoundname>TestPosition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_level" kindref="compound">Level</ref></type>
+        <definition>Level TestPosition.LevelToTest</definition>
+        <argsstring></argsstring>
+        <name>LevelToTest</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="10" column="18" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_position_1a9401fd51c80efdb7e4338231281abdec" prot="public" static="no" mutable="no">
+        <type><ref refid="class_interactable" kindref="compound">Interactable</ref></type>
+        <definition>Interactable TestPosition.ItemPrefab</definition>
+        <argsstring></argsstring>
+        <name>ItemPrefab</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="11" column="25" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_position_1a71c27deeb7623e7c1f0d42f50bb0cc72" prot="public" static="no" mutable="no">
+        <type><ref refid="class_interactable" kindref="compound">Interactable</ref></type>
+        <definition>Interactable TestPosition.BotPrefab</definition>
+        <argsstring></argsstring>
+        <name>BotPrefab</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="12" column="25" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_position_1ac68997064703eb770f5b88558405e742" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text TestPosition.TestedCount</definition>
+        <argsstring></argsstring>
+        <name>TestedCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="14" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_test_position_1add4e307e9bbf90deaf3fbe7a5b5661a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Assert that objects are setup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="19" column="18" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_position_1ad5e090b65c554d9e5da00b8e3d7d63bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Handle input for adding <ref refid="class_interactable" kindref="compound">Interactable</ref> objects to test. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="30" column="18" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="30" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_position_1ade448a929d5be72b9744b36b4694960a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.ToggleRays</definition>
+        <argsstring>()</argsstring>
+        <name>ToggleRays</name>
+        <briefdescription>
+<para>Toggles the if Debug rays will be on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="47" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_position_1a26c18b89555ca4da0b9fff4b4722c72b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.RandomlyMoveInteractablesInScene</definition>
+        <argsstring>()</argsstring>
+        <name>RandomlyMoveInteractablesInScene</name>
+        <briefdescription>
+<para>Moves all <ref refid="class_interactable" kindref="compound">Interactable</ref> items in the LevelToTest randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="55" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_position_1a8914548d6d04f91e58b27c924e4a3acf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.RandomlyAddInteractable</definition>
+        <argsstring>(Interactable newInteractable)</argsstring>
+        <name>RandomlyAddInteractable</name>
+        <param>
+          <type><ref refid="class_interactable" kindref="compound">Interactable</ref></type>
+          <declname>newInteractable</declname>
+        </param>
+        <briefdescription>
+<para>Adds an <ref refid="class_interactable" kindref="compound">Interactable</ref> randomly into the LevelToTest. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="63" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_position_1a4290bf4c39f0c89b8ff9bf3dd410c245" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.RandomlyAddBot</definition>
+        <argsstring>()</argsstring>
+        <name>RandomlyAddBot</name>
+        <briefdescription>
+<para>Adds a <ref refid="class_bot" kindref="compound">Bot</ref> randomly into the LevelToTest. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="72" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_position_1ac435b3cb7334b13ff5b7738091e87d03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestPosition.RandomlyAddItem</definition>
+        <argsstring>()</argsstring>
+        <name>RandomlyAddItem</name>
+        <briefdescription>
+<para>Adds an <ref refid="class_item" kindref="compound">Item</ref> randomly into the LevelToTest. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Scripts/TestPosition.cs" line="80" column="17" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="80" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Testing setup to attach unity UI hooks and Input hooks </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TestPosition</label>
+        <link refid="class_test_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TestPosition</label>
+        <link refid="class_test_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BotPrefab</edgelabel>
+          <edgelabel>ItemPrefab</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>LevelToTest</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interactable</label>
+        <link refid="class_interactable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Level</label>
+        <link refid="class_level"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CurrentClosest</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Player</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Scripts/TestPosition.cs" line="8" column="11" bodyfile="Assets/Scripts/TestPosition.cs" bodystart="9" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_test_position_1a71c27deeb7623e7c1f0d42f50bb0cc72" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>BotPrefab</name></member>
+      <member refid="class_test_position_1a9401fd51c80efdb7e4338231281abdec" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>ItemPrefab</name></member>
+      <member refid="class_test_position_1a424bb31122c348e50f34e0c30b35eac6" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>LevelToTest</name></member>
+      <member refid="class_test_position_1a4290bf4c39f0c89b8ff9bf3dd410c245" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>RandomlyAddBot</name></member>
+      <member refid="class_test_position_1a8914548d6d04f91e58b27c924e4a3acf" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>RandomlyAddInteractable</name></member>
+      <member refid="class_test_position_1ac435b3cb7334b13ff5b7738091e87d03" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>RandomlyAddItem</name></member>
+      <member refid="class_test_position_1a26c18b89555ca4da0b9fff4b4722c72b" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>RandomlyMoveInteractablesInScene</name></member>
+      <member refid="class_test_position_1add4e307e9bbf90deaf3fbe7a5b5661a2" prot="private" virt="non-virtual"><scope>TestPosition</scope><name>Start</name></member>
+      <member refid="class_test_position_1ac68997064703eb770f5b88558405e742" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>TestedCount</name></member>
+      <member refid="class_test_position_1ade448a929d5be72b9744b36b4694960a" prot="public" virt="non-virtual"><scope>TestPosition</scope><name>ToggleRays</name></member>
+      <member refid="class_test_position_1ad5e090b65c554d9e5da00b8e3d7d63bd" prot="private" virt="non-virtual"><scope>TestPosition</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
